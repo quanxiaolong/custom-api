@@ -3,7 +3,7 @@
  * All rights reserved.
  *  
  */
-package cn.com.custom.api.email.exception;
+package cn.com.custom.api.email.base.exception;
 
 /**
  * <p>标题：MailException </p>

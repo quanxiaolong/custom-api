@@ -3,7 +3,7 @@
  * All rights reserved.
  *  
  */
-package cn.com.custom.api.email.impl;
+package cn.com.custom.api.email;
 
 import java.io.File;
 import java.util.Map;
@@ -25,14 +25,14 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.util.CollectionUtils;
 
-import cn.com.custom.api.email.IMailSender;
-import cn.com.custom.api.email.exception.MailException;
-import cn.com.custom.api.email.model.Mail;
+import cn.com.custom.api.email.base.exception.MailException;
+import cn.com.custom.api.email.base.handler.IMailSender;
+import cn.com.custom.api.email.base.model.Mail;
 
 /**
  * <p>标题：MailSenderImpl </p>
  * <p>
- *    功能描述：
+ *    功能描述：邮件发送器实现
  * </p>
  * <p>创建日期：2017年1月18日下午1:55:04</p>
  * <p>作者：权小龙</p>
