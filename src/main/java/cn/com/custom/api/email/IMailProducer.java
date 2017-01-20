@@ -7,12 +7,13 @@ package cn.com.custom.api.email;
 
 import java.util.Map;
 
-import cn.com.custom.api.email.model.Mail;
+import cn.com.custom.api.email.base.model.Mail;
 
 /**
  * <p>标题：IHandler </p>
  * <p>
- *    功能描述：邮件模版创造器
+ *    功能描述：邮件模版创造器接口 
+ *    Inherited by {@link AbstractMailProduct}
  * </p>
  * <p>创建日期：2016年5月19日下午4:04:59</p>
  * <p>作者：权小龙</p>
@@ -28,14 +29,9 @@ public interface IMailProducer {
 	 */
 	public Mail createMail(Mail mail,Map<String,Object> modelMap)throws Exception;
 
-	/**
-	 * @date 2016年5月19日下午4:24:19
-	 * @author QuanXiaolong
-	 * @return
-	 */
-	public String createHtmlText(Map<String,Object> modelMap) throws Exception;
 	
 	/**
+	 * 创建纯文本内容
 	 * @date 2016年5月19日下午4:24:21
 	 * @author QuanXiaolong
 	 * @return

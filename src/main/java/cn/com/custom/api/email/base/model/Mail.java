@@ -3,7 +3,7 @@
  * All rights reserved.
  *  
  */
-package cn.com.custom.api.email.model;
+package cn.com.custom.api.email.base.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -38,9 +38,9 @@ public class Mail implements Serializable {
 	
 	private String subject;						//主题
 	
-	private String htmlText;		
+	private String htmlText;					//邮件Html内容		
 	
-	private String plainText;
+	private String plainText;					//纯文本内容
 	
 	/**
 	 * 邮件中的图片，Key：图片ID，Value：图片地址
